@@ -1,6 +1,7 @@
 numpy
-pandas
+pandas==1.5.3
 scikit-learn
 streamlit
-matplotlib
-seaborn
+matplotlib==3.7.0
+seaborn==0.11.2
+plotly.express
