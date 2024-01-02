@@ -77,7 +77,7 @@ kita lanjut dengan data exploration kita,
 df.hist(figsize=(12, 10))
 plt.show()
 ```
-![Alt text](eda1.4.png)
+![Alt text](eda1.png)
 
 ```python
 numeric_df = df.select_dtypes(include=['int64', 'float64'])
@@ -87,7 +87,7 @@ sns.heatmap(numeric_df.corr(),annot=True)
 plt.title("heatmap korelasi (numerik)")
 plt.show()
 ```
-![Alt text](eda2.4.png)
+![Alt text](eda2.png)
 
 ## Preprocesing 
 Disini kita akan mengubah nama columns agar lebih mudah dan tidak ribet,
@@ -132,7 +132,7 @@ ax.annotate('possible elbow point', xy=(3, 4.5), xytext=(3, 2.5), xycoords='data
 ax.annotate('possible elbow point', xy=(4, 4.5), xytext=(4, 2.5), xycoords='data',
             arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
 ```
-![Alt text](elbow.4.png)
+![Alt text](elbow.png)
 
 lalu kita lakukan proses clustering
 
@@ -153,7 +153,7 @@ for label in x['labels']:
                  xytext=(0, 10),
                  ha='center')
 ```
-![Alt text](cluster.4.png)
+![Alt text](cluster.png)
 
 ## Evalution
 
